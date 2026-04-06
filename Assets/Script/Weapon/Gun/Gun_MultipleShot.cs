@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class Gun_MultipleShot : MonoBehaviour
+public class Gun_MultipleShot : Abstract_Gun
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override void Shoot(Bullet bullet, Vector3 spawnPos)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        throw new System.NotImplementedException();
     }
 }

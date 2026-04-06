@@ -1,16 +1,10 @@
+using System;
 using UnityEngine;
-
-public class Abstract_Gun : MonoBehaviour
+public abstract class Abstract_Gun : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public event Action OnShoot;
+    public event Action OnReload;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public abstract void Shoot(Bullet bullet,Vector3 spawnPos);
+
 }
